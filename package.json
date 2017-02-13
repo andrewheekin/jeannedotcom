@@ -1,0 +1,11 @@
+{
+  "name": "jeannedotcom",
+  "version": "1.0.0",
+  "description": "moms tutoring site",
+  "main": "index.js",
+  "scripts": {
+    "start": "python -m SimpleHTTPServer"
+  },
+  "author": "Andrew Heekin",
+  "license": "ISC"
+}

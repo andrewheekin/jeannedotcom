@@ -1,0 +1,73 @@
+/*####### ALL MEDIA ########*/
+
+body {font-family: 'Roboto Slab', serif;}
+.title {display:inline-block; font-size:3.5em; vertical-align:bottom; color:grey;
+  animation:slidedown 1.5s; -moz-animation:slidedown 1.5s; -webkit-animation:slidedown 1.5s; animation-fill-mode:forwards;}
+.header {text-align:center; margin-top:5%;}
+img.mugshot {width:100px; height:auto; border-radius:65px; display:inline-block;
+  animation:fadein 2s; -moz-animation:fadein 2s; -webkit-animation:fadein 2s; /*animation-delay: 2s;*/}
+img.apple {opacity:0.8; width:70px; vertical-align:bottom;
+  animation:fadein-apple 2s; -moz-animation:fadein-apple 2s; -webkit-animation:fadein-apple 2s;}
+.footer {position:fixed; bottom:20px; left:calc(50% - 90px);}
+.footer a {color:gray;}
+.footer a:focus {outline:none;}
+.footer a:hover {opacity:0.6; text-decoration:none}
+.footer a:active {opacity:0.4;}
+.glyphicon {background:#999; padding:9px; border-radius:25px; font-size:1.8em; color:white; margin-left:15px;}
+.glyphicon-earphone:hover {background:#5884c5; -webkit-transition:background .5s; transition:background .5s; -moz-transition:background .5s;}
+.glyphicon-envelope:hover {background:#5884c5; -webkit-transition:background .5s; transition:background .5s; -moz-transition:background .5s;}
+.icons {position:fixed; top:calc(6% - 10px); right:calc(9% - 10px);}
+.content {font-size:1.3em; margin:5% 26%;}
+
+/*####### (end all media) ########*/
+
+
+/*####### DESKTOP >=992px ########*/
+
+@media screen and (min-width:992px) {
+  .desktop {display:block !important;}
+  .mobile {display:none !important;}
+  .title {margin:0 0 0 30px;}
+}
+
+/*####### (end desktop >=992px) ########*/
+
+
+/*####### MOBILE <992px PORTRAIT ########*/
+
+@media screen and (max-width:991px) and (orientation:portrait) { 
+  .desktop {display:none !important;}
+  .mobile {display:block !important;}
+  .title {margin:10px;}
+  img.mugshot {margin-top:30px;}
+}
+
+/*####### (end mobile <992px portrait) ########*/
+
+
+/*####### MOBILE <992px LANDSCAPE ########*/
+
+@media screen and (max-width:991px) and (orientation:landscape) { 
+  .desktop {display:none !important;}
+  .mobile {display:block !important;}
+}
+
+/*####### (end mobile <992px landscape) ########*/
+
+
+/*####### ANIMATIONS ########*/
+
+/*slide in*/
+@keyframes slidedown {from {transform:translateY(-20px);} to {transform:translateY(0);}}
+@-moz-keyframes slidedown {from {transform:translateY(-20px);} to {transform:translateY(0);}}
+@-webkit-keyframes slidedown {from {transform:translateY(-20px);} to {transform:translateY(0);}}
+
+/*fadein*/
+@keyframes fadein {from {opacity:0;} to {opacity:1;}}
+@-moz-keyframes fadein {from {opacity:0;} to {opacity:1;}} /*Firefox*/
+@-webkit-keyframes fadein {from {opacity:0;} to {opacity:1;}}  /* Safari and Chrome */
+
+/*fadein*/
+@keyframes fadein-apple {from {opacity:0;} to {opacity:.8;}}
+@-moz-keyframes fadein-apple {from {opacity:0;} to {opacity:.8;}} /*Firefox*/
+@-webkit-keyframes fadein-apple {from {opacity:0;} to {opacity:.8;}}  /* Safari and Chrome */
